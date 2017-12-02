@@ -1,0 +1,11 @@
+##Este es el review que haremos para ponernos en contexto con lo que estamos construyendo
+  con Ionic framework
+
+**Seccion de las pages: En esta sección es la parte donde podemos crear las vistas que 
+  puede ver el usario.
+
+**app.module: En esta sección es la que normalmente iremos importando los componentes que
+  creamos como lo hacemos con angular normalmente y lo pondremos en las declaraciones y 
+  entryComponents para poder hacer uso de ellos.
+
+**tabs: Inidicamos las páginas que queremos cargar y el html le decimos que la muestre
