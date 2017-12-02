@@ -6,4 +6,16 @@
 <ion-content padding>
     <h2>Review</h2>
     <p>Esta es la página del review</p>
+
+    <ion-card *ngFor="let review of _reviewService.reviewList">
+        <ion-list>
+            <ion-item>
+                {{ review.topic }} : 
+            </ion-item>
+            <ion-item>
+                {{ review.note }}
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
 </ion-content>

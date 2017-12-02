@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ReviewService } from "../../app/services/review.service";
 
 @Component({
     selector:"app-review",
@@ -7,8 +8,8 @@ import { Component } from "@angular/core";
 
 export class ReviewComponent{
     
-    constructor(){
+    constructor(private _reviewService:ReviewService){
 
     }
-    
+
 }

@@ -12,6 +12,7 @@ import { PendientesComponent } from "../pages/pendientes/pendientes.component";
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
 import { ListaDeseosService }  from './services/lista-deseos.service';
 import { ReviewComponent }     from "../pages/review/review.component";
+import { ReviewService }       from './services/review.service'
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ReviewComponent }     from "../pages/review/review.component";
     StatusBar,
     SplashScreen,
     ListaDeseosService,
+    ReviewService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
