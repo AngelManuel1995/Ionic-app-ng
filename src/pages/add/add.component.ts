@@ -35,4 +35,9 @@ export class AddComponent implements OnInit{
 
     }
 
+    deleteItem( idx ){
+        //Javascript function that permits to remove an element from an array
+        this.items.splice( idx, 1);
+    }
+
 }
