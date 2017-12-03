@@ -12,8 +12,9 @@ import { PendientesComponent } from "../pages/pendientes/pendientes.component";
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
 import { ListaDeseosService }  from './services/lista-deseos.service';
 import { ReviewComponent }     from "../pages/review/review.component";
-import { ReviewService }       from './services/review.service'
-
+import { AddComponent }        from '../pages/add/add.component';
+import { ReviewService }       from './services/review.service';
+import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ReviewService }       from './services/review.service'
     TabsPage,
     PendientesComponent,
     TerminadosComponent,
-    ReviewComponent
+    ReviewComponent,
+    AddComponent,
+    PlaceHolderPipe
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { ReviewService }       from './services/review.service'
     TabsPage,
     PendientesComponent,
     TerminadosComponent,
-    ReviewComponent
+    ReviewComponent,
+    AddComponent
   ],
   providers: [
     StatusBar,
