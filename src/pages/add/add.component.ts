@@ -6,8 +6,13 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class AddComponent implements OnInit{
-   
+
+    
+    listName:string;
+    itemName:string;
+    
     constructor(){
+
 
     }
 

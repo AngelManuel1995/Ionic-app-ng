@@ -13,8 +13,8 @@ import { TerminadosComponent } from '../pages/terminados/terminados.component';
 import { ListaDeseosService }  from './services/lista-deseos.service';
 import { ReviewComponent }     from "../pages/review/review.component";
 import { AddComponent }        from '../pages/add/add.component';
-import { ReviewService }       from './services/review.service'
-
+import { ReviewService }       from './services/review.service';
+import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { ReviewService }       from './services/review.service'
     PendientesComponent,
     TerminadosComponent,
     ReviewComponent,
-    AddComponent
+    AddComponent,
+    PlaceHolderPipe
   ],
   imports: [
     BrowserModule,
