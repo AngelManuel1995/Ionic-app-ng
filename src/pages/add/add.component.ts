@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Item, Lista } from "../../app/classes/index";
 
 @Component({
     selector:"app-add",
@@ -9,7 +10,9 @@ export class AddComponent implements OnInit{
 
     
     listName:string;
-    itemName:string;
+    itemName:string="";
+
+    items:Item[] = [];
     
     constructor(){
 
@@ -18,6 +21,18 @@ export class AddComponent implements OnInit{
 
     ngOnInit(){
         
+    }
+
+    addList(){
+        if(this.itemName.length == 0){
+            return;
+        }
+
+        let item = new Item();
+        item.nombre = this.itemName;
+        this.items.push(item);
+        this.itemName = "";
+
     }
 
 }
