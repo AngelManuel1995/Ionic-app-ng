@@ -7,26 +7,18 @@
 <ion-content padding>
   <h2>Lista de pendientes</h2>
 
-  <ion-card *ngFor="let lista of _listaDeseosService.lista">
+  <ion-card *ngFor="let lista of _listaDeseosService.lists">
     
     <ion-item>
-      <h2>{{lista.nombre}}</h2>
+      <h2>{{lista.nombre}}</h2><hr>
     </ion-item>
     <ion-list>
-      <ion-item>
-          <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon>
-          Tetris
-        </ion-item>
 
-      <ion-item>
+      <ion-item *ngFor="let item of lista.items">
           <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon>
-          Tetris
-        </ion-item>
+          {{ item.nombre }}
+      </ion-item>
 
-      <ion-item>
-          <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon>
-          Tetris
-        </ion-item>
     </ion-list>
 
 
