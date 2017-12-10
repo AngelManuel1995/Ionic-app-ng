@@ -15,6 +15,7 @@ import { ReviewComponent }     from "../pages/review/review.component";
 import { AddComponent }        from '../pages/add/add.component';
 import { ReviewService }       from './services/review.service';
 import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
+import { DetailComponent }     from '../pages/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
     TerminadosComponent,
     ReviewComponent,
     AddComponent,
-    PlaceHolderPipe
+    PlaceHolderPipe,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
     PendientesComponent,
     TerminadosComponent,
     ReviewComponent,
-    AddComponent
+    AddComponent,
+    DetailComponent
   ],
   providers: [
     StatusBar,

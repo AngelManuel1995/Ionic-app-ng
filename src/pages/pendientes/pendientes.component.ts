@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ListaDeseosService } from '../../app/services/lista-deseos.service';
-import { NavController } from "ionic-angular";
-import { AddComponent }  from "../add/add.component";
+import { Component, OnInit }    from '@angular/core';
+import { ListaDeseosService }   from '../../app/services/lista-deseos.service';
+import { NavController }        from "ionic-angular";
+import { AddComponent }         from "../add/add.component";
+import { DetailComponent }      from '../detail/detail.component';
 
 @Component({
     selector:'app-pendientes',
@@ -21,6 +22,10 @@ export class PendientesComponent implements OnInit{
 
     goToAdd(){
         this._navController.push(AddComponent);
+    }
+
+    showDetail(lista, idx){
+        this._navController.push( DetailComponent, { lista, idx });
     }
 }
 
