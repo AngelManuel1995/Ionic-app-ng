@@ -16,6 +16,7 @@ import { AddComponent }        from '../pages/add/add.component';
 import { ReviewService }       from './services/review.service';
 import { PlaceHolderPipe }     from './pipes/placeholder.pipe';
 import { DetailComponent }     from '../pages/detail/detail.component';
+import { PendientesPipe }      from '../app/pipes/pendientes.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { DetailComponent }     from '../pages/detail/detail.component';
     ReviewComponent,
     AddComponent,
     PlaceHolderPipe,
-    DetailComponent
+    PendientesPipe,
+    DetailComponent,
+
   ],
   imports: [
     BrowserModule,
