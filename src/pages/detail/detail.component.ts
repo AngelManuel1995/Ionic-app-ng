@@ -30,6 +30,17 @@ export class DetailComponent implements OnInit {
 
     myUpdate(item:Item){
         item.completado = !item.completado;
+
+        let todosMarcados = true;
+        for(let item of this.lista.items){
+            if(!item.completado){
+                todosMarcados = false;
+                break;
+            }
+        }
+
+        this.lista.terminada = todosMarcados;
+        
         this._listaDeseosService.updateData();
     }
 
@@ -47,7 +58,7 @@ export class DetailComponent implements OnInit {
               }
             ]
           });
-          confirm.present();
+        confirm.present();
     }
 
 }
